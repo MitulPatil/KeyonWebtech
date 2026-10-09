@@ -2,7 +2,7 @@ const isLocalFrontend = window.location.protocol === 'file:'
   || (['localhost', '127.0.0.1'].includes(window.location.hostname) && window.location.port !== '5000');
 const API_URL = isLocalFrontend
   ? 'http://localhost:5000/api'
-  : '/api';
+  : 'https://keyonwebtechdemo.onrender.com/api';
 const fallbackSlides = [{ imageUrl: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1800&q=85', eyebrow: 'Built for better business', title: 'A clearer way to move your business forward.', description: 'Thoughtful digital products and dependable technology for teams ready to do their best work.' }];
 let slides = [];
 let activeSlide = 0;
